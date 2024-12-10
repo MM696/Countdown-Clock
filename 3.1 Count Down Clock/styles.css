@@ -107,6 +107,9 @@ body {
 @media (max-width: 480px) {
   #title {
     font-size: 2rem; /* Adjusted for smaller screens */
+    position: relative;
+    left: 5vh;
+    width: 50vh;
   }
 
   #clockdiv {
@@ -114,6 +117,7 @@ body {
     margin: 5vh auto;
     font-size: 20px;
     align-items: center;
+    left: 1vh;
   }
 
   #clockdiv div > span {
@@ -132,10 +136,12 @@ body {
 /* Small Devices (481px - 768px) */
 @media (min-width: 481px) and (max-width: 768px) {
   #title {
+    width: 100vh;
     font-size: 3rem;
   }
 
   #clockdiv {
+    left: 3vh;
     width: 90%;
     margin: 7vh auto;
     font-size: 25px;
@@ -157,6 +163,8 @@ body {
 /* Medium Devices (769px - 1024px) */
 @media (min-width: 769px) and (max-width: 1024px) {
   #title {
+    position: relative;
+    left: 10vh;
     font-size: 3.5rem;
   }
 
@@ -164,6 +172,7 @@ body {
     width: 75%;
     margin: 8vh auto;
     font-size: 28px;
+    left: 0;
   }
 
   #clockdiv div > span {
