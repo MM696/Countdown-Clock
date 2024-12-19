@@ -1,5 +1,5 @@
 // Getting formatted date from date string
-let deadline = new Date("Dec 11, 2024 00:00:00").getTime();
+let deadline = new Date("Jan 1, 2025 00:00:00").getTime();
 
 // Calling defined function at certain intervals
 let x = setInterval(function () {
@@ -72,4 +72,34 @@ function showImagePopup(imagePath) {
   overlay.addEventListener("click", function () {
     document.body.removeChild(overlay);
   });
+}
+
+var originalImgWidth = 0;
+var img = null;
+
+function expand(it) {
+    originalImgWidth = it.width;
+    img = it;
+    exp();
+}
+
+function exp() {
+
+    if(window.innerWidth > img.width * 2.8){ 
+        img.width = img.width * 1.1;
+        setTimeout("exp()",100);
+    }
+    else
+        setTimeout("shrink()",100);
+
+
+}
+function shrink() {
+
+    if(originalImgWidth < img.width){
+        img.width = img.width / 1.1; 
+        setTimeout("shrink()",100);
+    }
+    else
+        setTimeout("exp()",100);
 }
