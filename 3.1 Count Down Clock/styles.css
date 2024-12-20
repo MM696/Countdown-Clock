@@ -14,7 +14,7 @@ body {
 
 #clockdiv {
     text-align: center;
-    margin-top: 5vh;
+    margin-top: auto;
     font-family: "Ultra", serif;
     font-size: 30px;
     height: 20vh;
@@ -217,6 +217,10 @@ body {
 @media (min-width: 1201px) {
   #title {
     font-size: 4.5rem;
+  }
+
+  #clockdiv {
+    margin-top: 7vh;
   }
 
   #clockdiv div > span {
